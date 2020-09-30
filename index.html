@@ -8,32 +8,34 @@
   </head>
   <body>
     <header>
-      <div class="logo">foody</div>
+      <div class="logo">Foody</div>
       <nav>
         <ul>
           <li>Home</li>
           <li>About</li>
-          <li>Menu></li>
+          <li>Menu</li>
           <li>Services</li>
           <li>Contact</li>
-          <li>hamburger</li>
+          <li><div class="hamburger"></div></li>
           <li><a href="#" class="button">Buy Now</a></li>
         </ul>
       </nav>
     </header>
 
     <div class="banner">
-      <h1>Make Food Taste Better</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum
-      </p>
-      <a href="#" class="button"> More Details</a>
+      <div class="banner-container">
+        <h1>Make Food Taste Better.</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum
+        </p>
+        <a href="#" class="button"> More Details</a>
+      </div>
     </div>
 
     <div class="container" id="about">
@@ -52,32 +54,35 @@
       </div>
       <div class="right"><img src="./images/shrimppic.png" /></div>
     </div>
-    <div class="container" id="specialities">
-      <h2>Our Specialities</h2>
+    <div class="container" id="specialties">
+      <h2>Our Specialties</h2>
       <p>Donec velit neque</p>
-      <div class="card_container">
-        <div class="image">
-          <img src="./images/card1.png" alt="" />
+
+      <div class="card-group">
+        <div class="card_container">
+          <div class="image">
+            <img src="./images/card1.png" alt="" />
+          </div>
+          <div class="text">Italinao - 19.99$</div>
         </div>
-        <div class="text">Italinao - 19.99$</div>
-      </div>
-      <div class="card_container">
-        <div class="image">
-          <img src="./images/card2.png" alt="" />
+        <div class="card_container">
+          <div class="image">
+            <img src="./images/card2.png" alt="" />
+          </div>
+          <div class="text">Lemonia - 19.99$</div>
         </div>
-        <div class="text">Lemonia - 19.99$</div>
-      </div>
-      <div class="card_container">
-        <div class="image">
-          <img src="./images/card3.png" alt="" />
+        <div class="card_container">
+          <div class="image">
+            <img src="./images/card3.png" alt="" />
+          </div>
+          <div class="text">Mangua - 19.99$</div>
         </div>
-        <div class="text">Mangua - 19.99$</div>
-      </div>
-      <div class="card_container">
-        <div class="image">
-          <img src="./images/card4.png" alt="" />
+        <div class="card_container">
+          <div class="image">
+            <img src="./images/card4.png" alt="" />
+          </div>
+          <div class="text">Biryani - 19.99$</div>
         </div>
-        <div class="text">Biryani - 19.99$</div>
       </div>
     </div>
 
@@ -91,7 +96,12 @@
           <ul>
             <li>
               <h4>Mexicana</h4>
-              <p>Donec velit neque...<span class="price">$19</span></p>
+              <p>
+                Donec velit neque, auctor sit amet aliquam vel ullamcorper sit
+                amet ligula..............................<span class="price"
+                  >$19</span
+                >
+              </p>
             </li>
             <li>
               <h4>Margherita</h4>
@@ -175,28 +185,35 @@
     <div class="container" id="book">
       <h2>Book A Table</h2>
       <p>Donec velit neque</p>
-      <div class="form_container">
-        <form>
+      <form>
+        <div class="form_container">
           <div class="input_container">
-            <label for=""></label>
-            <input type="text" name="" id="" placeholder="" />
+            <label for="book-date">Pick A Date</label>
+            <input type="date" name="book-date" id="book-date" placeholder="" />
           </div>
           <div class="input_container">
-            <label for=""></label>
-            <input type="text" name="" id="" placeholder="" />
+            <label for="book-time">Chooose A Time</label>
+            <select name="book-time" id="book-time">
+              <option value="0800">8:00pm</option>
+            </select>
           </div>
           <div class="input_container">
-            <label for=""></label>
-            <input type="text" name="" id="" placeholder="" />
+            <label for="book-people">Number A People</label>
+            <input
+              type="number"
+              name="book-people"
+              id="book-people"
+              placeholder=""
+            />
           </div>
-          <button type="submit"></button>
-        </form>
-      </div>
+        </div>
+        <button type="submit" class="button">Book Now</button>
+      </form>
     </div>
     <footer>
-      <div class="left"></div>
-      <div class="middle"></div>
-      <div class="right"></div>
+      <div class="left">Foody</div>
+      <div class="middle">Design By Creative Area</div>
+      <div class="right">Follow</div>
     </footer>
   </body>
 </html>
