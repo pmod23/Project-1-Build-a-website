@@ -135,7 +135,7 @@ h2 {
   background-repeat: no-repeat;
 }
 
-.banner .banner-container {
+.sbanner-container {
   flex: 0.6;
   margin-left: 150px;
   color: #fff;
@@ -378,4 +378,12 @@ footer {
   box-sizing: border-box;
 }
 
-@media (max-width: 500px);
+@media (max-width: 730px) {
+  .md-100 {
+    flex: 1;
+    margin-left: 0;
+  }
+  .md-hidden {
+    display: none;
+  }
+}
